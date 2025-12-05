@@ -2,10 +2,10 @@ from ultralytics import YOLO
 import os
 
 # Ruta al modelo
-model = YOLO(r"c:\Users\bravo\OneDrive - Universidad Mayor\10° semestre\PDI\P3\best.pt")
+model = YOLO(r"c:")
 
 # Ruta del archivo
-path = r"c:\Users\bravo\OneDrive - Universidad Mayor\10° semestre\PDI\P3\image.png"
+path = r"c:"
 
 # Extensiones soportadas
 image_exts = [".jpg", ".jpeg", ".png", ".bmp"]
@@ -28,7 +28,7 @@ def filtrar_confianza(result):
 
 
 # ==========================================
-# PROCESAMIENTO IMAGEN (funciona 100%)
+# PROCESAMIENTO IMAGEN
 # ==========================================
 if ext in image_exts:
     print("Procesando imagen...")
@@ -39,7 +39,7 @@ if ext in image_exts:
     for r in results:
         filtrar_confianza(r)
 
-        # AHORA sí mostramos/guardamos la imagen filtrada
+        # mostramos/guardamos la imagen filtrada
         r.show()       # muestra en pantalla ya filtrado
         r.save()       # guarda imagen ya filtrada
 
@@ -47,7 +47,7 @@ if ext in image_exts:
 
 
 # ==========================================
-# PROCESAMIENTO VIDEO (funciona 100%)
+# PROCESAMIENTO VIDEO
 # ==========================================
 elif ext in video_exts:
     print("Procesando video...")
