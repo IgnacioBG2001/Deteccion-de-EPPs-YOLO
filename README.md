@@ -11,3 +11,14 @@ Pasos para utilizar la version entrenada por nosotros son los siguientes.
 7) Ejecutar el codigo, el resultado quedará dentro de "runs\detect\predict" que se creará en la misma carpeta de los archivos
 
 NOTA: En caso de contener un error al ejecutar el codigo, puede ser necesario ocupar el siguiente comando en el terminal "pip install --upgrade ultralytics" o "pip3install --upgrade ultralytics"
+
+Metricas de detección.
+
+- Precision Media:  0.7723
+- Recall Medio:     0.6534
+- F1-Score Medio:   0.6617
+
+Métricas oficiales de YOLOv8.
+
+- mAP50:  0.7341
+- mAP95:  0.5062
